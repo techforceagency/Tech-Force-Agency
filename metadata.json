@@ -1,6 +1,6 @@
 {
   "name": "Tech Force Agency",
-  "description": "Reliable remote business support for growing US companies. Outsourced virtual assistants, customer support, appointment setting, lead generation, social media management, and email automation.",
+  "description": "Tech Force Agency is a business outsourcing company based in Islamabad, helping growing businesses save time by handling the work that slows them down. We provide virtual assistants, customer support, appointment setting, lead generation, social media marketing, and email marketing — with flexible packages, fast onboarding, and no long-term contracts required.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
