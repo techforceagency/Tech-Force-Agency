@@ -60,20 +60,19 @@ function initHeaderScroll() {
 
 /* --- Active Navigation Highlight --- */
 function highlightActiveNav() {
-  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  const pageName = window.location.pathname.split('/').filter(Boolean).pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-link, .dropdown-link, .mobile-nav-link, .mobile-submenu-link');
 
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (!href) return;
     
-    // Normalize href
-    const normalizedHref = href.replace(/\/$/, '') || '/';
+    const targetPage = href.split('#')[0].split('?')[0];
     
     if (
-      normalizedHref === currentPath ||
-      (currentPath.endsWith(normalizedHref) && normalizedHref !== '/') ||
-      (normalizedHref.startsWith('/#') && window.location.hash === normalizedHref.substring(1))
+      targetPage === pageName ||
+      (pageName === 'index.html' && (targetPage === 'index.html' || targetPage === './' || targetPage === '')) ||
+      (pageName === '' && (targetPage === 'index.html' || targetPage === './'))
     ) {
       link.classList.add('active');
     }
