@@ -1,0 +1,6 @@
+{
+  "name": "Tech Force Agency",
+  "description": "Reliable remote business support for growing US companies. Outsourced virtual assistants, customer support, appointment setting, lead generation, social media management, and email automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
