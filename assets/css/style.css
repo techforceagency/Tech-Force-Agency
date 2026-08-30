@@ -2163,5 +2163,20 @@ strong {
   border: 0;
 }
 
+.inline-text-link {
+  color: var(--color-brand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.inline-text-link:hover {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+}
+
+
 
 
